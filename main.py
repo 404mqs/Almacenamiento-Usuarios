@@ -44,11 +44,13 @@ while agregando:
 
     agregando = False
 
-    seleccion = int(input(f"[?] Quiere agregar mas personas a la tabla? \n [+] 1: Si \n [+] 2: No \n"))
+    separador(1)
+    seleccion = int(input(f"[?] Quiere agregar mas personas a la tabla? \n[+] 1: Si \n[+] 2: No \n"))
     
     while seleccion > 2 or seleccion < 1:
+        separador(1)
         print("[-] No se entendio su eleccion. Seleccione un numero")
-        seleccion = int(input(f"[?] Quiere agregar mas personas a la tabla? \n [+] 1: Si \n [+] 2: No \n"))
+        seleccion = int(input(f"[?] Quiere agregar mas personas a la tabla? \n[+] 1: Si \n[+] 2: No \n"))
         
     if seleccion == 1:
         agregando = True
@@ -58,6 +60,7 @@ while agregando:
         sleep(2)
     
     while seleccion > 2 or seleccion < 1:
+        separador(1)
         print("[-] No se entendio su eleccion. Seleccione un numero")
         seleccion = int(input(f"[?] Quiere agregar mas personas a la tabla? \n [+] 1: Si \n [+] 2: No \n"))
 
